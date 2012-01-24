@@ -1,0 +1,15 @@
+This is a small tool that allows you to set the POST code from
+userspace. (Say - display a hex byte on the plugged in postcard)
+Licence is GPLv3
+
+NOTE: Some postcards use 81h address. There's a define for that 
+at the start of pwrite.c. Default is 80h.
+
+compilation:
+make
+sudo make install
+
+Example usage:
+pwrite 0xff
+
+Enjoy!
